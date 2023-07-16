@@ -9,9 +9,6 @@ export default defineConfig({
     svelte(),
     VitePWA({
       registerType: "autoUpdate",
-      manifest: {
-        // insert app manifest here
-      },
     }),
   ],
   resolve: {
@@ -20,6 +17,7 @@ export default defineConfig({
       $lib: path.resolve(__dirname, "./src/lib"),
       $components: path.resolve(__dirname, "./src/components"),
       $icons: path.resolve(__dirname, "./src/icons"),
+      $types: path.resolve(__dirname, "./src/types.ts"),
     },
   },
 });

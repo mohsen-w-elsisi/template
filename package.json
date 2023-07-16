@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev-public": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "make-icons": "cd public; npx pwa-asset-generator icon.svg app-icons"
   },
   "dependencies": {
     "ramda": "^0.29.0",
